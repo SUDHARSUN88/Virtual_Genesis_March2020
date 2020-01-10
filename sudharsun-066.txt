@@ -5,7 +5,8 @@
       234
       CDEF
       etc */
- #include<iostream.h>
+#include<iostream>
+using namespace std 
 #include<stdio.h>
 #include<conio.h>
 void main()
