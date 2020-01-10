@@ -1,0 +1,42 @@
+/*This was the program given to me during the coding round conducted by KPIT during on campus recruitment
+     Print the pattern
+      1
+      AB
+      234
+      CDEF
+      etc */
+ #include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char	t;
+	int	i,j,l,s,a;
+		s=1;
+		clrscr();
+		t='A';
+		a=1;
+		cout<<"ENTER THE NUMBER OF ROWS : ";
+		cin>>i;
+		for(j=1;j<=i;j++)
+		{
+			if(j%2==0)
+			{
+				for(l=a;l<=j;l++)
+				{
+					cout<<t;
+					t++;
+				}
+			}
+			if(j%2!=0)
+			{
+				for(l=a;l<=j;l++)
+				{
+					cout<<s;
+					s++;
+				}
+			}
+			cout<<endl;
+		 }
+		 getch();
+}
