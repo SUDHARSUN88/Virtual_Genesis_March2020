@@ -5,8 +5,7 @@
       234
       CDEF
       etc */
-#include<iostream>
-using namespace std 
+
 #include<stdio.h>
 #include<conio.h>
 void main()
@@ -17,15 +16,15 @@ void main()
 		clrscr();
 		t='A';
 		a=1;
-		cout<<"ENTER THE NUMBER OF ROWS : ";
-		cin>>i;
+		printf("ENTER THE N VALUE");
+		scanf("%d",&i);
 		for(j=1;j<=i;j++)
 		{
 			if(j%2==0)
 			{
 				for(l=a;l<=j;l++)
 				{
-					cout<<t;
+					printf("%d",t);
 					t++;
 				}
 			}
@@ -33,11 +32,11 @@ void main()
 			{
 				for(l=a;l<=j;l++)
 				{
-					cout<<s;
+					printf("%d",s);
 					s++;
 				}
 			}
-			cout<<endl;
+			printf("\n");
 		 }
 		 getch();
 }
